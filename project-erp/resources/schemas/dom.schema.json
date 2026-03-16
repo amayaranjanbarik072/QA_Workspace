@@ -1,0 +1,26 @@
+{
+  "url": "https://vsole.getapcs.com/",
+  "title": "GetaPCS",
+  "fields": [
+    {
+      "name": "Email",
+      "type": "email",
+      "required": true
+    },
+    {
+      "name": "password",
+      "type": "password",
+      "required": true
+    },
+    {
+      "name": "",
+      "type": "select-one",
+      "required": false
+    }
+  ],
+  "buttons": [
+    "SIGN IN"
+  ],
+  "links": [],
+  "summary": "URL: https://vsole.getapcs.com/ | Title: GetaPCS | Fields: 3 | Buttons: SIGN IN | Nav: "
+}

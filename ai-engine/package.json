@@ -1,0 +1,20 @@
+{
+  "name": "ai-engine",
+  "version": "1.0.0",
+  "description": "AI Engine - CrewAI + MCP + Gemini",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node run.ts",
+  "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.0.0",
+    "playwright": "^1.58.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}

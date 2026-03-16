@@ -1,0 +1,12 @@
+{
+  "prompt": "\n    Login to the application with username amaya@mail.com, password amaya@123 and select the unit as Bangalore. After login if any pop up is comming saying someone else is login ot using then click on yes button.\n    Navigate to Engineering module.\n    Navigate to Item Master then Item Master Create page, explore each tabs(General Description, Alternates, Engineering, Dimensions, Routing, Approved Vendor List, Planning, Warehouse, Shipping, Quality and Costing) and each elemnts, create a new page object file for Item Master Create(ItemMasterCreate.ts) as well create a test file(ItemMasterCreate.spec.ts).\n    Fill the details(Create 3 items with Name FG Item1, SA Item1, PP Item1 and Type as FG, SA and PurchasePart respectively) to each fields and dropdowns and save the item, validate the item is created successfully by checking the item list on table page.\n  ",
+  "domContext": "\nPage URL: https://vsole.getapcs.com/\nPage Title: GetaPCS\n\nForm Fields (3):\n-  | type: email | required: true\n- password | type: password | required: true\n-  | type: select-one | required: false\n\nButtons: Sign In\nNavigation: \n  ",
+  "steps": "[\n  { \"step\": 1, \"action\": \"login\", \"target\": \"application\", \"value\": \"username: amaya@mail.com, password: amaya@123, unit: Bangalore, handle_popup: yes\" },\n  { \"step\": 2, \"action\": \"navigate\", \"target\": \"Engineering module\", \"value\": \"\" },\n  { \"step\": 3, \"action\": \"navigate\", \"target\": \"Item Master > Item Master Create page\", \"value\": \"\" },\n  { \"step\": 4, \"action\": \"explore\", \"target\": \"Item Master Create page tabs and elements\", \"value\": \"General Description, Alternates, Engineering, Dimensions, Routing, Approved Vendor List, Planning, Warehouse, Shipping, Quality, Costing\" },\n  { \"step\": 5, \"action\": \"create\", \"target\": \"page object file\", \"value\": \"ItemMasterCreate.ts\" },\n  { \"step\": 6, \"action\": \"create\", \"target\": \"test file\", \"value\": \"ItemMasterCreate.spec.ts\" },\n  { \"step\": 7, \"action\": \"create\", \"target\": \"item\", \"value\": \"3\" },\n  { \"step\": 8, \"action\": \"validate\", \"target\": \"item list table\", \"value\": \"3 items created\" }\n]",
+  "projectPath": "D:\\my-qa-workspace\\project-erp",
+  "options": {
+    "headless": false,
+    "generateCode": true,
+    "runTests": true,
+    "generateReport": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "username": "admin@getapcs.com",
+  "password": "Admin@123",
+  "firstName": "Admin",
+  "lastName": "User",
+  "role": "admin",
+  "permissions": ["all"]
+}

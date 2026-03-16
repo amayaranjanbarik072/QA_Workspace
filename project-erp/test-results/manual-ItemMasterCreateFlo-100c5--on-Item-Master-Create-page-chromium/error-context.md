@@ -1,0 +1,162 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - img "logo" [ref=e8]
+      - generic [ref=e9]:
+        - generic:
+          - heading [level=4]
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - generic [ref=e12] [cursor=pointer]:
+              - generic "Amaya Barik" [ref=e14]: A
+              - paragraph [ref=e17]: amaya@mail.com
+              - text: 󰅀
+            - text: 󰃨 󰍃 󰝳
+          - listitem [ref=e18]:
+            - generic "Change Theme" [ref=e19] [cursor=pointer]:
+              - generic [ref=e20]: 󰏘
+              - generic [ref=e21]: Theme
+            - text: 󰏘 󰖨 󰖔
+          - listitem [ref=e22]:
+            - generic [ref=e24] [cursor=pointer]: 󰇰
+          - listitem [ref=e26]:
+            - generic [ref=e28] [cursor=pointer]: 󰂜
+            - text: 󰃭
+          - listitem [ref=e29]:
+            - generic [ref=e31] [cursor=pointer]: 󰐥
+        - text: 󰍜
+  - generic [ref=e32]:
+    - generic:
+      - navigation [ref=e33]:
+        - list [ref=e36]:
+          - listitem [ref=e37]:
+            - link "Dashboard" [ref=e38] [cursor=pointer]:
+              - /url: /dashboard
+          - listitem [ref=e39]:
+            - generic [ref=e40]: Org Config
+          - listitem [ref=e41]:
+            - generic [ref=e42]: Engineering
+          - listitem [ref=e43]:
+            - generic [ref=e44]: Sales & Marketing
+          - listitem [ref=e45]:
+            - generic [ref=e46]: Sourcing
+          - listitem [ref=e47]:
+            - generic [ref=e48]: Procurement
+          - listitem [ref=e49]:
+            - generic [ref=e50]: Manufacturing
+          - listitem [ref=e51]:
+            - generic [ref=e52]: Warehouse
+          - listitem [ref=e53]:
+            - generic [ref=e54]: Logistic
+          - listitem [ref=e55]:
+            - generic [ref=e56]: Finance
+      - generic [ref=e60]:
+        - heading "Item Master 󰅀" [level=4] [ref=e62] [cursor=pointer]:
+          - generic [ref=e63]: Item Master
+          - generic [ref=e64]: 󰅀
+        - heading "Engg BOM 󰅀" [level=4] [ref=e66] [cursor=pointer]:
+          - generic [ref=e67]: Engg BOM
+          - generic [ref=e68]: 󰅀
+        - heading "Secondary Master 󰅀" [level=4] [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]: Secondary Master
+          - generic [ref=e72]: 󰅀
+        - heading "Reports 󰅀" [level=4] [ref=e74] [cursor=pointer]:
+          - generic [ref=e75]: Reports
+          - generic [ref=e76]: 󰅀
+    - generic [ref=e77]:
+      - generic [ref=e81]:
+        - tablist [ref=e82]:
+          - tab "Present" [selected] [ref=e83] [cursor=pointer]
+          - tab "Financial Year" [ref=e84] [cursor=pointer]
+          - tab "Last Week" [ref=e85] [cursor=pointer]
+        - tabpanel "Present" [ref=e87]:
+          - generic [ref=e89]:
+            - generic [ref=e91]:
+              - heading "Inventory Overview" [level=4] [ref=e93]
+              - table [ref=e96]:
+                - rowgroup [ref=e97]:
+                  - row "Category Count Value" [ref=e98]:
+                    - columnheader "Category" [ref=e99]
+                    - columnheader "Count" [ref=e100]
+                    - columnheader "Value" [ref=e101]
+                - rowgroup [ref=e102]:
+                  - row "Store Inventory 6 0" [ref=e103]:
+                    - cell "Store Inventory" [ref=e104] [cursor=pointer]
+                    - cell "6" [ref=e105] [cursor=pointer]
+                    - cell "0" [ref=e106] [cursor=pointer]
+                  - row "WIP 1 0" [ref=e107]:
+                    - cell "WIP" [ref=e108] [cursor=pointer]
+                    - cell "1" [ref=e109] [cursor=pointer]
+                    - cell "0" [ref=e110] [cursor=pointer]
+                  - row "Scrap 1 0" [ref=e111]:
+                    - cell "Scrap" [ref=e112] [cursor=pointer]
+                    - cell "1" [ref=e113] [cursor=pointer]
+                    - cell "0" [ref=e114] [cursor=pointer]
+                  - row "Reject 2 0" [ref=e115]:
+                    - cell "Reject" [ref=e116] [cursor=pointer]
+                    - cell "2" [ref=e117] [cursor=pointer]
+                    - cell "0" [ref=e118] [cursor=pointer]
+            - generic [ref=e120]:
+              - heading "Sales Orders Overview" [level=4] [ref=e122]
+              - table [ref=e125]:
+                - rowgroup [ref=e126]:
+                  - row "Category Count Value" [ref=e127]:
+                    - columnheader "Category" [ref=e128]
+                    - columnheader "Count" [ref=e129]
+                    - columnheader "Value" [ref=e130]
+                - rowgroup [ref=e131]:
+                  - row "Open SO 0 0" [ref=e132]:
+                    - cell "Open SO" [ref=e133] [cursor=pointer]
+                    - cell "0" [ref=e134] [cursor=pointer]
+                    - cell "0" [ref=e135] [cursor=pointer]
+                  - row "30 Days 1 1115.1" [ref=e136]:
+                    - cell "30 Days" [ref=e137] [cursor=pointer]
+                    - cell "1" [ref=e138] [cursor=pointer]
+                    - cell "1115.1" [ref=e139] [cursor=pointer]
+                  - row "60 Days 1 1115.1" [ref=e140]:
+                    - cell "60 Days" [ref=e141] [cursor=pointer]
+                    - cell "1" [ref=e142] [cursor=pointer]
+                    - cell "1115.1" [ref=e143] [cursor=pointer]
+                  - row "90 Days 1 1115.1" [ref=e144]:
+                    - cell "90 Days" [ref=e145] [cursor=pointer]
+                    - cell "1" [ref=e146] [cursor=pointer]
+                    - cell "1115.1" [ref=e147] [cursor=pointer]
+                  - row "> 90 Days 0" [ref=e148]:
+                    - cell "> 90 Days" [ref=e149] [cursor=pointer]
+                    - cell "0" [ref=e150] [cursor=pointer]
+                    - cell [ref=e151] [cursor=pointer]
+            - generic [ref=e153]:
+              - heading "Purchase Orders Overview" [level=4] [ref=e155]
+              - table [ref=e158]:
+                - rowgroup [ref=e159]:
+                  - row "Category Count Value" [ref=e160]:
+                    - columnheader "Category" [ref=e161]
+                    - columnheader "Count" [ref=e162]
+                    - columnheader "Value" [ref=e163]
+                - rowgroup [ref=e164]:
+                  - row "Open PO 0 0" [ref=e165]:
+                    - cell "Open PO" [ref=e166] [cursor=pointer]
+                    - cell "0" [ref=e167] [cursor=pointer]
+                    - cell "0" [ref=e168] [cursor=pointer]
+                  - row "30 Days 3 9000" [ref=e169]:
+                    - cell "30 Days" [ref=e170] [cursor=pointer]
+                    - cell "3" [ref=e171] [cursor=pointer]
+                    - cell "9000" [ref=e172] [cursor=pointer]
+                  - row "60 Days 3 9000" [ref=e173]:
+                    - cell "60 Days" [ref=e174] [cursor=pointer]
+                    - cell "3" [ref=e175] [cursor=pointer]
+                    - cell "9000" [ref=e176] [cursor=pointer]
+                  - row "90 Days 3 9000" [ref=e177]:
+                    - cell "90 Days" [ref=e178] [cursor=pointer]
+                    - cell "3" [ref=e179] [cursor=pointer]
+                    - cell "9000" [ref=e180] [cursor=pointer]
+                  - row "> 90 Days 0" [ref=e181]:
+                    - cell "> 90 Days" [ref=e182] [cursor=pointer]
+                    - cell "0" [ref=e183] [cursor=pointer]
+                    - cell [ref=e184] [cursor=pointer]
+      - contentinfo [ref=e186]:
+        - generic [ref=e188]: Copyright © 2026 Wyzmindz PVT LTD. ALL Rights Reserved
+```

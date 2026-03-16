@@ -1,0 +1,34 @@
+{
+  "url": "https://vsole.getapcs.com/",
+  "title": "GetaPCS",
+  "fields": [
+    {
+      "id": "",
+      "name": "",
+      "type": "email",
+      "required": true,
+      "placeholder": "Email",
+      "label": ""
+    },
+    {
+      "id": "password",
+      "name": "",
+      "type": "password",
+      "required": true,
+      "placeholder": "Password",
+      "label": ""
+    },
+    {
+      "id": "",
+      "name": "",
+      "type": "select-one",
+      "required": false,
+      "placeholder": "",
+      "label": ""
+    }
+  ],
+  "buttons": [
+    "Sign In"
+  ],
+  "navigation": []
+}

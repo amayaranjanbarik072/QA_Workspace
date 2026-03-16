@@ -1,0 +1,18 @@
+{
+  "projectName": "GetApcs Automation",
+  "framework": "Playwright + TypeScript",
+  "apps": [
+    "vsole",
+    "demo-keus",
+    "demo-trass",
+    "whms",
+    "avision",
+    "storesBuddy"
+  ],
+  "defaultEnvironment": "qa",
+  "defaultBrowser": "chromium",
+  "retries": 1,
+  "timeout": 60000,
+  "reportPath": "test-results",
+  "logsPath": "logs"
+}

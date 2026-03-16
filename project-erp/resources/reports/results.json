@@ -1,0 +1,970 @@
+{
+  "config": {
+    "configFile": "D:\\my-qa-workspace\\project-erp\\playwright.config.ts",
+    "rootDir": "D:/my-qa-workspace/project-erp/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/my-qa-workspace/project-erp/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/my-qa-workspace/project-erp/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "resources/reports/html"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "resources/reports/results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "manual\\ItemMasterCreateFlow.spec.ts",
+      "file": "manual/ItemMasterCreateFlow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Item Master Create Functionality",
+          "file": "manual/ItemMasterCreateFlow.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should validate all tabs on Item Master Create page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 63817,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                          "column": 8,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                            "column": 8,
+                            "line": 7
+                          },
+                          "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 31,
+                            "line": 108
+                          },
+                          "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Item Master\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:108\n\n\u001b[0m \u001b[90m 106 |\u001b[39m\n \u001b[90m 107 |\u001b[39m   \u001b[36masync\u001b[39m navigateToItemMasterCreatePage()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 108 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 109 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 110 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterCreateLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 111 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToItemMasterCreatePage (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:108:31)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:13:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-10T07:04:23.755Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-100c5--on-Item-Master-Create-page-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-100c5--on-Item-Master-Create-page-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-100c5--on-Item-Master-Create-page-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                        "column": 8,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 65500,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                          "column": 8,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                            "column": 8,
+                            "line": 7
+                          },
+                          "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 38,
+                            "line": 103
+                          },
+                          "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-03-10T07:05:31.344Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-100c5--on-Item-Master-Create-page-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-100c5--on-Item-Master-Create-page-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-100c5--on-Item-Master-Create-page-chromium-retry1\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                        "column": 8,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "50ab9e3dc5ec483458e7-9dc138cf223fb93e12e4",
+              "file": "manual/ItemMasterCreateFlow.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "should create FG Item (FG Item1)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 50677,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Item Master\")')\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Item Master\")')\u001b[22m\n\n    at ItemMasterCreatePage.navigateToItemMasterCreatePage (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:108:31)\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:13:32",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                          "column": 31,
+                          "line": 108
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:108\n\n\u001b[0m \u001b[90m 106 |\u001b[39m\n \u001b[90m 107 |\u001b[39m   \u001b[36masync\u001b[39m navigateToItemMasterCreatePage()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 108 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 109 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 110 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterCreateLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 111 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 31,
+                            "line": 108
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Item Master\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:108\n\n\u001b[0m \u001b[90m 106 |\u001b[39m\n \u001b[90m 107 |\u001b[39m   \u001b[36masync\u001b[39m navigateToItemMasterCreatePage()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 108 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 109 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 110 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterCreateLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 111 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToItemMasterCreatePage (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:108:31)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:13:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-10T07:06:40.014Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-eb229-ld-create-FG-Item-FG-Item1--chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                        "column": 31,
+                        "line": 108
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 67664,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                          "column": 8,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                            "column": 8,
+                            "line": 7
+                          },
+                          "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 38,
+                            "line": 103
+                          },
+                          "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-03-10T07:07:33.778Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-eb229-ld-create-FG-Item-FG-Item1--chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-eb229-ld-create-FG-Item-FG-Item1--chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-eb229-ld-create-FG-Item-FG-Item1--chromium-retry1\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                        "column": 8,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "50ab9e3dc5ec483458e7-f415f867064fc594a992",
+              "file": "manual/ItemMasterCreateFlow.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "should create SA Item (SA Item1)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4699,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                          "column": 38,
+                          "line": 103
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 38,
+                            "line": 103
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-10T07:08:44.551Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-d9717-ld-create-SA-Item-SA-Item1--chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                        "column": 38,
+                        "line": 103
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 67861,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                          "column": 8,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                            "column": 8,
+                            "line": 7
+                          },
+                          "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 38,
+                            "line": 103
+                          },
+                          "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-03-10T07:08:52.858Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-d9717-ld-create-SA-Item-SA-Item1--chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-d9717-ld-create-SA-Item-SA-Item1--chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-d9717-ld-create-SA-Item-SA-Item1--chromium-retry1\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                        "column": 8,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "50ab9e3dc5ec483458e7-59d185ed57742c2818f1",
+              "file": "manual/ItemMasterCreateFlow.spec.ts",
+              "line": 90,
+              "column": 7
+            },
+            {
+              "title": "should create PP Item (PP Item1)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 49799,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                          "column": 38,
+                          "line": 103
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 38,
+                            "line": 103
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-10T07:10:03.883Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-69a1d-ld-create-PP-Item-PP-Item1--chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                        "column": 38,
+                        "line": 103
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3780,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                          "column": 38,
+                          "line": 103
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 38,
+                            "line": 103
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-03-10T07:10:56.575Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-69a1d-ld-create-PP-Item-PP-Item1--chromium-retry1\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                        "column": 38,
+                        "line": 103
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "50ab9e3dc5ec483458e7-737b0a61ef8aabf11da9",
+              "file": "manual/ItemMasterCreateFlow.spec.ts",
+              "line": 112,
+              "column": 7
+            },
+            {
+              "title": "should validate created items in Item Master List",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9670,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                          "column": 38,
+                          "line": 103
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 38,
+                            "line": 103
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-10T07:11:03.589Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-b3a7a-d-items-in-Item-Master-List-chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                        "column": 38,
+                        "line": 103
+                      }
+                    },
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 64531,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                          "column": 8,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                            "column": 8,
+                            "line": 7
+                          },
+                          "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 38,
+                            "line": 103
+                          },
+                          "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-03-10T07:11:16.369Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-b3a7a-d-items-in-Item-Master-List-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-b3a7a-d-items-in-Item-Master-List-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-b3a7a-d-items-in-Item-Master-List-chromium-retry1\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                        "column": 8,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "50ab9e3dc5ec483458e7-d5009840327f803a0bc2",
+              "file": "manual/ItemMasterCreateFlow.spec.ts",
+              "line": 134,
+              "column": 7
+            },
+            {
+              "title": "should explore all form elements in General Description tab",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 56572,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Item Master\")')\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Item Master\")')\u001b[22m\n\n    at ItemMasterCreatePage.navigateToItemMasterCreatePage (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:108:31)\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:13:32",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                          "column": 31,
+                          "line": 108
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:108\n\n\u001b[0m \u001b[90m 106 |\u001b[39m\n \u001b[90m 107 |\u001b[39m   \u001b[36masync\u001b[39m navigateToItemMasterCreatePage()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 108 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 109 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 110 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterCreateLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 111 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 31,
+                            "line": 108
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Item Master\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:108\n\n\u001b[0m \u001b[90m 106 |\u001b[39m\n \u001b[90m 107 |\u001b[39m   \u001b[36masync\u001b[39m navigateToItemMasterCreatePage()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 108 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 109 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 110 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterCreateLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 111 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToItemMasterCreatePage (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:108:31)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:13:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-10T07:12:23.500Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-18d9a--in-General-Description-tab-chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                        "column": 31,
+                        "line": 108
+                      }
+                    },
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9112,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                          "column": 38,
+                          "line": 103
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 38,
+                            "line": 103
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-03-10T07:13:22.886Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-18d9a--in-General-Description-tab-chromium-retry1\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                        "column": 38,
+                        "line": 103
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "50ab9e3dc5ec483458e7-fb3ba91eef4d488e2862",
+              "file": "manual/ItemMasterCreateFlow.spec.ts",
+              "line": 162,
+              "column": 7
+            },
+            {
+              "title": "should explore all tabs and their elements",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 66388,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                          "column": 8,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                            "column": 8,
+                            "line": 7
+                          },
+                          "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 31,
+                            "line": 108
+                          },
+                          "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Item Master\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:108\n\n\u001b[0m \u001b[90m 106 |\u001b[39m\n \u001b[90m 107 |\u001b[39m   \u001b[36masync\u001b[39m navigateToItemMasterCreatePage()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 108 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 109 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 110 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mitemMasterCreateLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 111 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToItemMasterCreatePage (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:108:31)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:13:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-10T07:13:35.138Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-761c1-all-tabs-and-their-elements-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-761c1-all-tabs-and-their-elements-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-761c1-all-tabs-and-their-elements-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                        "column": 8,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 67852,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8",
+                        "location": {
+                          "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                          "column": 8,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                            "column": 8,
+                            "line": 7
+                          },
+                          "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   \u001b[36mlet\u001b[39m itemMasterCreatePage\u001b[33m:\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     itemMasterCreatePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mItemMasterCreatePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mnavigateToApplication()\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m itemMasterCreatePage\u001b[33m.\u001b[39mlogin(\u001b[32m'amaya@mail.com'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'amaya@123'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bangalore'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:7:8\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts",
+                            "column": 38,
+                            "line": 103
+                          },
+                          "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a:has-text(\"Engineering\")')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\ItemMasterCreate.ts:103\n\n\u001b[0m \u001b[90m 101 |\u001b[39m\n \u001b[90m 102 |\u001b[39m   \u001b[36masync\u001b[39m navigateToEngineeringModule()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mengineeringModuleLink\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m   }\n \u001b[90m 106 |\u001b[39m\u001b[0m\n\u001b[2m    at ItemMasterCreatePage.navigateToEngineeringModule (D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterCreate.ts:103:38)\u001b[22m\n\u001b[2m    at D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts:12:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-03-10T07:14:44.309Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-761c1-all-tabs-and-their-elements-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-761c1-all-tabs-and-their-elements-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\my-qa-workspace\\project-erp\\test-results\\manual-ItemMasterCreateFlo-761c1-all-tabs-and-their-elements-chromium-retry1\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\my-qa-workspace\\project-erp\\tests\\manual\\ItemMasterCreateFlow.spec.ts",
+                        "column": 8,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "50ab9e3dc5ec483458e7-4559bc7dfb0e27b0de52",
+              "file": "manual/ItemMasterCreateFlow.spec.ts",
+              "line": 177,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-10T07:04:21.231Z",
+    "duration": 691860.414,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}

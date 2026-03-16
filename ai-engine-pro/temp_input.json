@@ -1,0 +1,8 @@
+{
+  "prompt": "Login to the application with username amaya@mail.com, password amaya@123\n    and select the unit as Bangalore.\n    After login if any popup appears saying someone else is logged in, click Yes.\n    Navigate to Engineering module and click on Item Master dropdown.\n    Navigate to Item Master Create page.\n    Explore all tabs: General Description, Alternates, Engineering, Dimensions,\n    Routing, Approved Vendor List, Planning, Warehouse, Shipping, Quality, Costing.\n    Create 1 item:\n      - Name: FG Item1,  Type: FG, and fill random data into rest of the fields and select random options in the dropdowns.\n    After creation validate the item appears in the item list table.",
+  "projectPath": "D:\\my-qa-workspace\\project-erp",
+  "domContext": "URL: https://vsole.getapcs.com/\nTitle: GetaPCS\nFields (3): Email[email], password[password], [select-one]\nButtons: SIGN IN\nNavigation:",
+  "pageObjPath": "D:\\my-qa-workspace\\project-erp\\pages\\ItemMasterByAI.page.ts",
+  "specPath": "D:\\my-qa-workspace\\project-erp\\tests\\generated\\ItemMasterByAI.spec.ts",
+  "reportPath": "D:\\my-qa-workspace\\project-erp\\resources\\reports\\report.md"
+}

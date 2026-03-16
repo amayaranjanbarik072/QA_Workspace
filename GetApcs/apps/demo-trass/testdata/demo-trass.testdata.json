@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "amaya@mail.com",
+      "password": "amaya@123",
+      "firstName": "Amaya",
+      "lastName": "User",
+      "unit": "Bangalore",
+      "role": "user",
+      "permissions": ["view", "create"]
+    },
+    {
+      "id": 2,
+      "username": "manager@mail.com",
+      "password": "Manager@123",
+      "firstName": "Manager",
+      "lastName": "User",
+      "unit": "Delhi",
+      "role": "manager",
+      "permissions": ["view", "create", "edit", "delete"]
+    },
+    {
+      "id": 3,
+      "username": "admin@mail.com",
+      "password": "Admin@123",
+      "firstName": "Admin",
+      "lastName": "User",
+      "unit": "Mumbai",
+      "role": "admin",
+      "permissions": ["all"]
+    }
+  ],
+  "organizations": [
+    {
+      "id": 1,
+      "name": "Bangalore Branch",
+      "code": "BGC",
+      "location": "Bangalore",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Delhi Branch",
+      "code": "DLH",
+      "location": "Delhi",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "Mumbai Branch",
+      "code": "MUM",
+      "location": "Mumbai",
+      "status": "active"
+    }
+  ],
+  "configurations": [
+    {
+      "id": 1,
+      "name": "Demo Configuration",
+      "description": "Default configuration for demo-trass",
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "roles": [
+    {
+      "id": 1,
+      "name": "admin",
+      "description": "Administrator with full access",
+      "permissions": ["all"]
+    },
+    {
+      "id": 2,
+      "name": "manager",
+      "description": "Manager with manage access",
+      "permissions": ["view", "create", "edit"]
+    },
+    {
+      "id": 3,
+      "name": "user",
+      "description": "Regular user with view access",
+      "permissions": ["view"]
+    },
+    {
+      "id": 4,
+      "name": "superadmin",
+      "description": "Super administrator with all access",
+      "permissions": ["all"]
+    }
+  ]
+}
